@@ -1,4 +1,4 @@
-export const products = [
+export const cartList = [
     {"id": 1, "name": "Sony Wh-Ch510 Bluetooth Wireless", "price": 149, "image": "https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=600"},
     {"id": 2, "name": "boAt Rockerz 450", "price": 49, "image": "https://images.pexels.com/photos/1667088/pexels-photo-1667088.jpeg?auto=compress&cs=tinysrgb&w=600"},
     {"id": 3, "name": "JBL Tune 760NC", "price": 179, "image": "https://images.pexels.com/photos/821651/pexels-photo-821651.jpeg?auto=compress&cs=tinysrgb&w=600"},

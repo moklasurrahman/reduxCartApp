@@ -7,6 +7,7 @@ import { useEffect } from 'react';
 
 const Card = ({product}) => {
   const dispatch = useDispatch(); //for remove 
+  
   const [isInCart, setIsInCart] =useState(false)
   const cartList = useSelector(state=> state.cartState.cartList)//comming everythin from store
 

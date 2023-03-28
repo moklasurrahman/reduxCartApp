@@ -8,7 +8,7 @@ import { useSelector } from 'react-redux';
 const OrderDetails = () => {
   useTitle('cart');
 
-  const products = useSelector(state => state.cartState.cartList) //comming from cartslice and store
+  const cartList = useSelector(state => state.cartState.cartList) //comming from cartslice and store
   const total = useSelector(state => state.cartState.total) //comming from cartslice and store
 
 
@@ -16,10 +16,10 @@ const OrderDetails = () => {
     <section className='OrderDetails'>
         <div className="cartcont">
 
-          <div className="cartTitle mt-10 uppercase font-medium font-s">Total Item: {products.length} / ${total}</div>
+          <div className="cartTitle mt-10 uppercase font-medium font-s">Total Item: {cartList.length} / ${total}</div>
           <div className="cartsitem my-10">
             {
-              products.map((product)=>(     
+              cartList.map((product)=>(     
                <article key={product.id}>
                 <OrderDetailcard product={product}/>
                </article>

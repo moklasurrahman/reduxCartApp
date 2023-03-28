@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from './../../components/card/Card';
-import { products } from '../../Fackdata';
+import { cartList } from '../../Fackdata';
 import './home.scss'
 import { useTitle } from './../../Hook';
 
@@ -12,7 +12,7 @@ const Home = () => {
     <section className='home'>
      <div className="container">
      <div className="cardItem content-center grid gap-3 sm:gap-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 ">{
-        products.map((product) => (
+        cartList.map((product) => (
           <article key={product.id}>
              <Card product={product}/>
           </article>
